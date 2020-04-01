@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Parameter name="powerauth.service.url" value="${ENROLLMENT_POWERAUTH_SERVICE_URL}"/>
+    <Parameter name="powerauth.iam.service.url" value="${ENROLLMENT_IAM_SERVICE_URL}"/>
+</Context>

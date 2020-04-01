@@ -28,6 +28,9 @@ ADD deploy/images/powerauth-admin.war $TOMCAT_HOME/webapps/
 ADD deploy/conf/powerauth-restful-server.xml $TOMCAT_HOME/conf/Catalina/localhost/
 ADD deploy/images/powerauth-restful-server.war $TOMCAT_HOME/webapps/
 
+ADD deploy/conf/enrollment-server.xml $TOMCAT_HOME/conf/Catalina/localhost/
+ADD deploy/images/enrollment-server.war $TOMCAT_HOME/webapps/
+
 # Create user tomcat and run Tomcat under this user
 RUN groupadd -r tomcat
 RUN useradd -r -g tomcat -d $TOMCAT_HOME -s /sbin/nologin tomcat
